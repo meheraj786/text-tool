@@ -38,6 +38,10 @@ h1 span{
   font-family: "Poppins", sans-serif;
   color: #e76f51;
 }
+header{
+  background: #f5ebe0;
+  box-shadow: 0 0 15px 1px grey;
+}
 
 header .nav-wrapper, ul{
   display: flex;
@@ -55,10 +59,157 @@ header ul li{
   cursor: pointer;
   transition-duration: 500ms;
 }
-header ul li:hover{
+button{
+  padding: 10px 15px;
+  background: linear-gradient(90deg, var(--orange), var(--purple));
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid var(--bg);
+  color: var(--bg);
+  cursor: pointer;
+}
+button:hover{
   background: transparent;
-  /* background: linear-gradient(90deg, var(--purple), var(--orange) ); */
   color: var(--purple); 
   border: 1px solid var(--orange);
   box-shadow: 0 0 15px 1px var(--orange);
+  transition-duration: 500ms;
+}
+header ul li:hover{
+  background: transparent;
+  color: var(--purple); 
+  border: 1px solid var(--orange);
+  box-shadow: 0 0 15px 1px var(--orange);
+}
+.active{
+  background: transparent;
+  color: var(--purple); 
+  border: 1px solid var(--orange);
+  box-shadow: 0 0 15px 1px var(--orange);
+}
+h2{
+  color: var(--purple);
+  font-size: 38px;
+  margin: 20px 0;
+  text-align: center;
+}
+h3{
+  color: var(--orange);
+  font-size: 24px;
+  margin: 15px 0;
+}
+
+#case-converter{
+  padding: 100px 0;
+}
+#case-converter .case-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+#case-converter .buttons{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.input{
+  width: 100%;
+}
+.output{
+  width: 100%;
+}
+textarea{
+  width: 100%;
+  height: 30rem;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--orange);
+  box-shadow: 0 0 5px 1px var(--orange);
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+.output textarea{
+  width: 100%;
+  height: 30rem;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--purple);
+  box-shadow: 0 0 5px 1px var(--purple);
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+.output h3{
+  color: var(--purple);
+}
+#word-counter{
+  padding: 100px 0;
+}
+#word-counter .word-wrapper{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#word-counter .word-wrapper .input{
+  text-align: center;
+}
+#word-counter .word-wrapper button{
+  margin: 20px 10px;
+}
+#word-counter .word-wrapper .count-result{
+  font-size: 26px;
+  color: var(--orange);
+  font-weight: 600;
+}
+#html-formatter{
+  padding: 100px 0;
+}
+#html-formatter .html-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+#css-formatter{
+  padding: 100px 0;
+}
+#css-formatter .css-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+#json-formatter{
+  padding: 100px 0;
+}
+#json-formatter .json-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+#lorem-generator{
+  padding: 100px 0;
+}
+#lorem-generator .lorem-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+#lorem-generator .lorem-wrapper label{
+  font-size: 24px;
+  color: var(--purple);
+}
+#lorem-generator .lorem-wrapper input{
+  width: 15%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid var(--orange);
+  box-shadow: 0 0 5px 1px var(--orange);
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
 }

@@ -19,12 +19,12 @@
             <h1>TEXT <span>Tool</span></h1>
           </div>
           <ul>
-            <li class="">Case Converter</li>
-            <li class="">Word Counter</li>
-            <li class="">HTML Formatter</li>
-            <li class="">CSS Formatter</li>
-            <li class="">JSON Formatter</li>
-            <li class="">Lorem Generator</li>
+            <li class="case-btn active">Case Converter</li>
+            <li class="word-btn">Word Counter</li>
+            <li class="html-btn">HTML Formatter</li>
+            <li class="css-btn">CSS Formatter</li>
+            <li class="json-btn">JSON Formatter</li>
+            <li class="lorem-btn">Lorem Generator</li>
           </ul>
         </div>
       </div>
@@ -32,17 +32,21 @@
     <!-- Case convert  -->
     <div id="case-converter">
       <div class="container">
+        <h2>Case Converter</h2>
         <div class="case-wrapper">
-          <h2>Case Converter</h2>
           <div class="input">
+            <h3>Input Your Text</h3>
             <textarea name="case-input" id="case-input"></textarea>
           </div>
-          <button onclick="uppercase()">UPPERCASE</button>
-          <button onclick="lowercase()">lowercase</button>
-          <button onclick="titlecase()">Title Case</button>
-          <button onclick="sentencecase()">Sentence case</button>
-          <button onclick="clear()">Clear</button>
+<div class="buttons">
+  <button onclick="uppercase()">UPPERCASE</button>
+  <button onclick="lowercase()">lowercase</button>
+  <button onclick="titlecase()">Title Case</button>
+  <button onclick="sentencecase()">Sentence case</button>
+  <button onclick="clear()">Clear</button>
+</div>
           <div class="output">
+            <h3>Your Result</h3>
             <textarea name="case-output" id="case-output"></textarea>
           </div>
         </div>
@@ -55,9 +59,9 @@
         <div class="word-wrapper">
           <div class="input">
             <textarea name="word-input" id="word-input"></textarea>
+            <p class="count-result"></p>
             <button onclick="count()">Count</button>
             <button onclick="clearWord()">Clear</button>
-            <p class="count-result"></p>
           </div>
         </div>
       </div>
@@ -68,12 +72,12 @@
       <div class="container">
         <div class="html-wrapper">
           <div class="input">
-            <h2>Input Your HTML File Here</h2>
+            <h3>Input Your HTML Here</h3>
             <textarea name="html-input" id="html-input"></textarea>
           </div>
           <button onclick="htmlFormat()">Go!</button>
           <div class="output">
-            <h2>Your HTML format</h2>
+            <h3>Your HTML format</h3>
             <textarea name="html-output" id="html-output"></textarea>
           </div>
         </div>
@@ -85,12 +89,12 @@
       <div class="container">
         <div class="css-wrapper">
           <div class="input">
-            <h2>Input Your CSS File Here</h2>
+            <h3>Input Your CSS File Here</h3>
             <textarea name="css-input" id="css-input"></textarea>
           </div>
           <button onclick="cssFormat()">Go!</button>
           <div class="output">
-            <h2>Your CSS format</h2>
+            <h3>Your CSS format</h3>
             <textarea name="css-output" id="css-output"></textarea>
           </div>
         </div>
@@ -102,12 +106,12 @@
       <div class="container">
         <div class="json-wrapper">
           <div class="input">
-            <h2>Input Your JSON File Here</h2>
+            <h3>Input Your JSON Here</h3>
             <textarea name="json-input" id="json-input"></textarea>
           </div>
           <button onclick="jsonFormat()">Go!</button>
           <div class="output">
-            <h2>Your JSON format</h2>
+            <h3>Your JSON format</h3>
             <textarea name="json-output" id="json-output"></textarea>
           </div>
         </div>
@@ -117,8 +121,12 @@
     <div id="lorem-generator">
       <div class="container">
         <h2>Lorem Generator</h2>
-        <input class="lorem-input" type="number"><label for="lorem-input">How Many words you want</label>
-        <textarea name="lorem" id="lorem-text"></textarea>
+<div class="lorem-wrapper">
+  <label for="lorem-input">How Many words you want</label>
+  <input class="lorem-input" type="number">
+  <button onclick="generate()">Generate</button>
+  <textarea name="lorem" id="lorem-text"></textarea>
+</div>
       </div>
     </div>
 
