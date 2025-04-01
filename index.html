@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Tool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+<div class="nav-wrapper">
+  <div class="logo">
+  </div>
+  <ul>
+    <li class="">Case Converter</li>
+    <li class="">Word Counter</li>
+    <li class="">HTML Formatter</li>
+    <li class="">CSS Formatter</li>
+    <li class="">JSON Formatter</li>
+    <li class="">Lorem Generator</li>
+  </ul>
+</div>
+    </div>
+  </header>
+  <!-- Case convert  -->
+  <div id="case-converter">
+    <div class="container">
+<div class="case-wrapper">
+  <h2>Case Converter</h2>
+  <div class="input">
+    <textarea name="case-input" id="case-input"></textarea>
+  </div>
+  <button
+  onclick="uppercase()">UPPERCASE</button>
+  <button onclick="lowercase()">lowercase</button>
+  <button onclick="titlecase()">Title Case</button>
+  <button onclick="sentencecase()">Sentence case</button>
+  <button onclick="clear()">Clear</button>
+  <div class="output">
+    <textarea name="case-output" id="case-output"></textarea>
+  </div>
+</div>
+    </div>
+  </div>
+  <div id="word-counter">
+    <div class="container">
+      <h2>Word Counter</h2>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
