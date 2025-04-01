@@ -1,55 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Text Tool</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <div class="container">
-<div class="nav-wrapper">
-  <div class="logo">
-  </div>
-  <ul>
-    <li class="">Case Converter</li>
-    <li class="">Word Counter</li>
-    <li class="">HTML Formatter</li>
-    <li class="">CSS Formatter</li>
-    <li class="">JSON Formatter</li>
-    <li class="">Lorem Generator</li>
-  </ul>
-</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Tool</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="nav-wrapper">
+          <div class="logo"></div>
+          <ul>
+            <li class="">Case Converter</li>
+            <li class="">Word Counter</li>
+            <li class="">HTML Formatter</li>
+            <li class="">CSS Formatter</li>
+            <li class="">JSON Formatter</li>
+            <li class="">Lorem Generator</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- Case convert  -->
+    <div id="case-converter">
+      <div class="container">
+        <div class="case-wrapper">
+          <h2>Case Converter</h2>
+          <div class="input">
+            <textarea name="case-input" id="case-input"></textarea>
+          </div>
+          <button onclick="uppercase()">UPPERCASE</button>
+          <button onclick="lowercase()">lowercase</button>
+          <button onclick="titlecase()">Title Case</button>
+          <button onclick="sentencecase()">Sentence case</button>
+          <button onclick="clear()">Clear</button>
+          <div class="output">
+            <textarea name="case-output" id="case-output"></textarea>
+          </div>
+        </div>
+      </div>
     </div>
-  </header>
-  <!-- Case convert  -->
-  <div id="case-converter">
-    <div class="container">
-<div class="case-wrapper">
-  <h2>Case Converter</h2>
-  <div class="input">
-    <textarea name="case-input" id="case-input"></textarea>
-  </div>
-  <button
-  onclick="uppercase()">UPPERCASE</button>
-  <button onclick="lowercase()">lowercase</button>
-  <button onclick="titlecase()">Title Case</button>
-  <button onclick="sentencecase()">Sentence case</button>
-  <button onclick="clear()">Clear</button>
-  <div class="output">
-    <textarea name="case-output" id="case-output"></textarea>
-  </div>
-</div>
+    <!-- word counter  -->
+    <div id="word-counter">
+      <div class="container">
+        <h2>Word Counter</h2>
+        <div class="word-wrapper">
+          <div class="input">
+            <textarea name="word-input" id="word-input"></textarea>
+            <button onclick="count()">Count</button>
+            <button onclick="clearWord()">Clear</button>
+            <p class="count-result"></p>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  <div id="word-counter">
-    <div class="container">
-      <h2>Word Counter</h2>
+    <!-- HTML Formatter  -->
+    <div id="html-formatter">
+      <h2>HTML Formatter</h2>
+      <div class="container">
+        <div class="html-wrapper">
+          <div class="input">
+            <h2>Input Your HTML File Here</h2>
+            <textarea name="html-input" id="html-input"></textarea>
+          </div>
+          <button onclick="htmlFormat()">Go!</button>
+          <div class="output">
+            <h2>Your HTML format</h2>
+            <textarea name="html-output" id="html-output"></textarea>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
 
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
