@@ -10,6 +10,19 @@ const jsonInput= document.querySelector("#json-input")
 const jsonOutput= document.querySelector("#json-output")
 const loremInput= document.querySelector(".lorem-input")
 const loremOutput= document.querySelector("#lorem-text")
+const caseBtn= document.querySelector(".case-btn")
+const wordBtn= document.querySelector(".word-btn")
+const htmlBtn= document.querySelector(".html-btn")
+const cssBtn= document.querySelector(".css-btn")
+const jsonBtn= document.querySelector(".json-btn")
+const loremBtn= document.querySelector(".lorem-btn")
+const caseConverterSection= document.querySelector("#case-converter")
+const wordCounterSection= document.querySelector("#word-counter")
+const htmlFormatterSection= document.querySelector("#html-formatter")
+const cssFormatterSection= document.querySelector("#css-formatter")
+const jsonFormatterSection= document.querySelector("#json-formatter")
+const loremGeneratorSection= document.querySelector("#lorem-generator")
+
 
 function toTitleCase(str) {
   let words = str.split(' ');
@@ -156,3 +169,95 @@ function generate(){
   }
   loremOutput.value= `Lorem ipsum dolor ${result}`
 }
+
+caseBtn.addEventListener("click", function () {
+  caseConverterSection.style.display="block"
+  wordCounterSection.style.display="none"
+  htmlFormatterSection.style.display="none"
+  cssFormatterSection.style.display="none"
+  jsonFormatterSection.style.display="none"
+  loremGeneratorSection.style.display="none"
+  caseBtn.classList.add("active")
+  wordBtn.classList.remove("active")
+  htmlBtn.classList.remove("active")
+  cssBtn.classList.remove("active")
+  jsonBtn.classList.remove("active")
+  loremBtn.classList.remove("active")
+
+  
+})
+wordBtn.addEventListener("click", function () {
+  caseConverterSection.style.display="none"
+  wordCounterSection.style.display="block"
+  htmlFormatterSection.style.display="none"
+  cssFormatterSection.style.display="none"
+  jsonFormatterSection.style.display="none"
+  loremGeneratorSection.style.display="none"
+  wordBtn.classList.add("active")
+  caseBtn.classList.remove("active")
+  htmlBtn.classList.remove("active")
+  cssBtn.classList.remove("active")
+  jsonBtn.classList.remove("active")
+  loremBtn.classList.remove("active")
+
+})
+htmlBtn.addEventListener("click", function () {
+  caseConverterSection.style.display="none"
+  wordCounterSection.style.display="none"
+  htmlFormatterSection.style.display="block"
+  cssFormatterSection.style.display="none"
+  jsonFormatterSection.style.display="none"
+  loremGeneratorSection.style.display="none"
+  htmlBtn.classList.add("active")
+  wordBtn.classList.remove("active")
+  caseBtn.classList.remove("active")
+  cssBtn.classList.remove("active")
+  jsonBtn.classList.remove("active")
+  loremBtn.classList.remove("active")
+
+})
+cssBtn.addEventListener("click", function () {
+  caseConverterSection.style.display="none"
+  wordCounterSection.style.display="none"
+  htmlFormatterSection.style.display="none"
+  cssFormatterSection.style.display="block"
+  jsonFormatterSection.style.display="none"
+  loremGeneratorSection.style.display="none"
+  cssBtn.classList.add("active")
+  wordBtn.classList.remove("active")
+  htmlBtn.classList.remove("active")
+  caseBtn.classList.remove("active")
+  jsonBtn.classList.remove("active")
+  loremBtn.classList.remove("active")
+
+})
+jsonBtn.addEventListener("click", function () {
+  caseConverterSection.style.display="none"
+  wordCounterSection.style.display="none"
+  htmlFormatterSection.style.display="none"
+  cssFormatterSection.style.display="none"
+  jsonFormatterSection.style.display="block"
+  loremGeneratorSection.style.display="none"
+  jsonBtn.classList.add("active")
+  wordBtn.classList.remove("active")
+  htmlBtn.classList.remove("active")
+  cssBtn.classList.remove("active")
+  caseBtn.classList.remove("active")
+  loremBtn.classList.remove("active")
+
+})
+loremBtn.addEventListener("click", function () {
+  caseConverterSection.style.display="none"
+  wordCounterSection.style.display="none"
+  htmlFormatterSection.style.display="none"
+  cssFormatterSection.style.display="none"
+  jsonFormatterSection.style.display="none"
+  loremGeneratorSection.style.display="block"
+  loremBtn.classList.add("active")
+  wordBtn.classList.remove("active")
+  htmlBtn.classList.remove("active")
+  cssBtn.classList.remove("active")
+  jsonBtn.classList.remove("active")
+  caseBtn.classList.remove("active")
+
+})

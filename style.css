@@ -26,6 +26,10 @@ a{
   margin: 0 auto;
 }
 
+#word-counter, #html-formatter, #css-formatter, #json-formatter, #lorem-generator{
+  display: none;
+}
+
 h1{
   font-size: 48px;
   font-weight: 700;
@@ -216,4 +220,78 @@ textarea:focus{
   box-shadow: 0 0 5px 1px var(--orange);
   font-size: 16px;
   font-family: "Poppins", sans-serif;
+}
+
+@media (max-width: 768px){
+  .container{
+    max-width: 100%;
+    margin: 0 10px;
+  }
+  header .nav-wrapper{
+    flex-direction: column;
+    gap: 5px;
+  }
+  header ul{
+    flex-wrap: wrap;
+  }
+  header ul li{
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+  h1{
+    font-size: 38px;
+  }
+  h1 span{
+    font-size: 28px;
+  }
+  h2{
+    font-size: 28px;
+  }
+  h3{
+    font-size: 20px;
+  }
+  #case-converter .case-wrapper{
+    flex-direction: column;
+    gap: 20px;
+  }
+  #case-converter .buttons{
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  #case-converter .buttons button{
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+  #case-converter .buttons button:hover{
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+  #case-converter .buttons button.active{
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+  #word-counter .word-wrapper button{
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+  #html-formatter .html-wrapper {
+    flex-direction: column;
+  }
+  #css-formatter .css-wrapper {
+    flex-direction: column;
+  }
+  #json-formatter .json-wrapper {
+    flex-direction: column;
+  }
+  #word-counter .word-wrapper .count-result{
+    font-size: 20px;
+  }
+  #lorem-generator .lorem-wrapper input{
+    width: 30%;
+    padding: 5px;
+    font-size: 16px;
+  }
+
+
 }
