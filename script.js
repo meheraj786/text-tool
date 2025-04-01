@@ -159,7 +159,7 @@ function jsonFormat() {
 
 function generate(){
   loremOutput.value=""
-  let loremWords= ["lorem", "ipsum", "dolor", "sit", "amet", "consectetur", "adipisicing", "elit", "quisquam"]
+  let loremWords= ["lorem", "ipsum", ",", "dolor", "sit", "amet", "consectetur", "adipisicing", "elit", "quisquam", ".", "dolor", "sit", "amet", "consectetur", "adipisicing", "elit", "quisquam"]
   let result= ""
   let loremLength= parseInt(loremInput.value)-3
   for (let i = 0; i < loremLength; i++) {
