@@ -2,6 +2,10 @@ const caseInput= document.querySelector("#case-input")
 const caseOutput= document.querySelector("#case-output")
 const wordInput= document.querySelector("#word-input")
 const countResult= document.querySelector(".count-result")
+const htmlInput= document.querySelector("#html-input")
+const htmlOutput= document.querySelector("#html-output")
+const cssInput= document.querySelector("#css-input")
+const cssOutput= document.querySelector("#css-output")
 
 function toTitleCase(str) {
   let words = str.split(' ');
@@ -68,11 +72,42 @@ function count() {
     countResult.innerHTML= ""
   }else{
     let words = wordInput.value.split(' ');
-  countResult.innerHTML= `Total ${words.length} words`
+    countResult.innerHTML= `Total ${words.length} words`
   }
   
 }
 function clearWord() {
   wordInput.value=''
   countResult.innerHTML= ''
+}
+
+function htmlFormat() {
+  const lines= htmlInput.value.split("\n");
+  let result = "";
+  let indent = 0;
+  for (let i = 0; i < lines.length; i++) {
+    if (lines[i].includes("</")) {
+      indent--;
+    }
+    result += "\t".repeat(indent) + lines[i] + "\n";
+    if (lines[i].includes("<")) {
+      indent++;
+    }
+  }
+  htmlOutput.value= result
+}
+function cssFormat() {
+  const lines= cssInput.value.split("\n");
+  let result = "";
+  let indent = 0;
+  for (let i = 0; i < lines.length; i++) {
+    if (lines[i].includes("}")) {
+      indent--;
+    }
+    result += "\t".repeat(indent) + lines[i] + "\n";
+    if (lines[i].includes("{")) {
+      indent++;
+    }
+  }
+  cssOutput.value= result
 }
