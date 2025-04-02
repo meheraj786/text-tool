@@ -170,6 +170,13 @@ function generate(){
   loremOutput.value= `Lorem ipsum dolor ${result}`
 }
 
+
+function mobileMenu() {
+  const menuItems= document.querySelector(".nav-items")
+  
+  
+}
+
 caseBtn.addEventListener("click", function () {
   caseConverterSection.style.display="block"
   wordCounterSection.style.display="none"

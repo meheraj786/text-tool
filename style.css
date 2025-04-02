@@ -222,10 +222,23 @@ textarea:focus{
   font-family: "Poppins", sans-serif;
 }
 
+.mobile-menu-button{
+  display: none;
+}
+.menu-active{
+  display: flex;
+}
+
 @media (max-width: 768px){
   .container{
     max-width: 100%;
     margin: 0 10px;
+  }
+  .mobile-menu-button{
+    display: block;
+  }
+  .nav-items{
+    display: none;
   }
   header .nav-wrapper{
     flex-direction: column;
