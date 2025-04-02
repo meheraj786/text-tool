@@ -225,9 +225,7 @@ textarea:focus{
 .mobile-menu-button{
   display: none;
 }
-.menu-active{
-  display: flex;
-}
+
 
 @media (max-width: 768px){
   .container{
@@ -250,6 +248,7 @@ textarea:focus{
   header ul li{
     padding: 10px 15px;
     font-size: 16px;
+    margin: 8px 0;
   }
   h1{
     font-size: 38px;

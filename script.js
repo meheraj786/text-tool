@@ -173,7 +173,11 @@ function generate(){
 
 function mobileMenu() {
   const menuItems= document.querySelector(".nav-items")
-  
+  if (menuItems.style.display=="block") {
+    menuItems.style.display="none"
+  }else{
+    menuItems.style.display="block"
+  }
   
 }
 
