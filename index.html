@@ -4,11 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Text Tool</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Mynerve&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mynerve&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -18,7 +21,10 @@
           <div class="logo">
             <h1>TEXT <span>Tool</span></h1>
           </div>
-          <ul>
+          <div class="mobile-menu-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="currentColor" d="M4 18q-.425 0-.712-.288T3 17t.288-.712T4 16h16q.425 0 .713.288T21 17t-.288.713T20 18zm0-5q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7t.288-.712T4 6h16q.425 0 .713.288T21 7t-.288.713T20 8z"/></svg>
+          </div>
+          <ul class="nav-items">
             <li class="case-btn active">Case Converter</li>
             <li class="word-btn">Word Counter</li>
             <li class="html-btn">HTML Formatter</li>
@@ -38,13 +44,13 @@
             <h3>Input Your Text</h3>
             <textarea name="case-input" id="case-input"></textarea>
           </div>
-<div class="buttons">
-  <button onclick="uppercase()">UPPERCASE</button>
-  <button onclick="lowercase()">lowercase</button>
-  <button onclick="titlecase()">Title Case</button>
-  <button onclick="sentencecase()">Sentence case</button>
-  <button onclick="clear()">Clear</button>
-</div>
+          <div class="buttons">
+            <button onclick="uppercase()">UPPERCASE</button>
+            <button onclick="lowercase()">lowercase</button>
+            <button onclick="titlecase()">Title Case</button>
+            <button onclick="sentencecase()">Sentence case</button>
+            <button onclick="clear()">Clear</button>
+          </div>
           <div class="output">
             <h3>Your Result</h3>
             <textarea name="case-output" id="case-output"></textarea>
@@ -121,12 +127,12 @@
     <div id="lorem-generator">
       <div class="container">
         <h2>Lorem Generator</h2>
-<div class="lorem-wrapper">
-  <label for="lorem-input">How Many words you want</label>
-  <input class="lorem-input" type="number">
-  <button onclick="generate()">Generate</button>
-  <textarea name="lorem" id="lorem-text"></textarea>
-</div>
+        <div class="lorem-wrapper">
+          <label for="lorem-input">How Many words you want</label>
+          <input class="lorem-input" type="number" />
+          <button onclick="generate()">Generate</button>
+          <textarea name="lorem" id="lorem-text"></textarea>
+        </div>
       </div>
     </div>
 
